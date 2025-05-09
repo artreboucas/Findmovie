@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* PLANO DE FUNDO */
+.gradient-background {
+    background: linear-gradient(209deg,#1A1528);
+    background-size: 120% 120%;
+    animation: gradient-animation 20s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.bg-gradient-flow {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2d2d3a, #1c1c2b);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+}
+
+
+/* ANIMAÇÃO DO BUTÃO */
+@keyframes pulse-light {
+    0%, 100% {
+      opacity: 0.4;
+      filter: blur(5px);
+    }
+    50% {
+      opacity: 0.6;
+      filter: blur(8px);
+    }
+  }
+  
+  .animate-pulse-light {
+    animation: pulse-light 4s infinite ease-in-out;
+  }
+
+@font-face {
+    font-family:"Metropolis-Bold";
+    src: url(/src/fonts/metropolis/Metropolis-Bold.otf);
+}
+
+@font-face {
+    font-family:"Metropolis-ExtraBold";
+    src: url(/src/fonts/metropolis/Metropolis-ExtraBold.otf);
+}
