@@ -12,7 +12,10 @@ module.exports = {
         secondary: '#2d2d2d',
       },
     },
+    fontFamily: {
+      Mepropolis: ["Metropolis-Bold"],
+      "Metropolis-ExtraBold" : ["Metropolis-ExtraBold"]
+    },
   },
   plugins: [],
-}
-
+};
